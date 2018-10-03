@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    background-color:#a9d7d1;
+    font-family: Roboto, monospace;
+    margin: 3rem 16rem 1rem 16rem;
+}
+form{
+    display:grid;
+    background-color: gray ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+            "name-left name-right"
+            "email-left email-right"
+            "age-left age-right"
+            "role-left age-right"
+            "rating-left rating-right"
+            "most-like-left most-like-right"
+            "improvement-left improvement-right"
+            "comments-left comments-right";
+}
+#description{
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+#name-label{
+    grid-area: name-left;
+    /*justify-items: right;*/
+    /*align-items: center;*/
+    background-color: blue;
+}
+#name{
+    grid-area: name-right;
+    /*justify-items: left;*/
+    /*align-items: center;*/
+    background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
